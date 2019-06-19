@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<title>Hello, I'm SUHO :)</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+		}
+
+		a:visited{
+			color: black;
+		}
+
+		a{
+			color: black;
+		}
+
+		body{
+			min-width: 768px;
+		}
+
+
+		
+		/*모바일*/
+		.empty{
+			height:60px;
+		}
+		.navbar {
+/*			position: fixed;
+			width: 100%;
+			height: 60px;*/
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			box-shadow: 0px 1px 15px 0px rgb(130,130,130, 0.5);
+			background-color: white;
+			padding-left: 30px;
+			padding-right: 30px;
+			font-size: 14px;
+			min-width: 768px;
+		}
+
+		.navbar .logo img{
+			height: 35px;
+			vertical-align: middle;
+			margin-bottom: 5px;
+		}
+		.navbar .logo{
+			line-height: 60px;
+			text-decoration: none;
+			color: rgb(85,85,85);
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+
+		.navbar .menu{
+			visibility: visible;
+			float: right;
+			list-style: none;
+			line-height: 60px;
+
+			/*visibility: hidden;			
+			float: right;
+			list-style: none;
+			line-height: 60px;*/
+		}
+
+		.navbar .menu .menu-item{
+			float: left;
+			margin-left: 30px;
+			/*float: left;
+			margin-left: 30px;*/
+		}
+
+		.navbar .menu .menu-item:hover{
+			color: rgb(1, 161, 221);
+		}
+
+
+
+		/*헬퍼(가운데정렬)*/
+		.helper{
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		.hero-header{
+			height: 900px;
+			width: 100%;
+			/*width: 100%;
+			height: 350px;*/
+			background-image: url('https://i.postimg.cc/Vk8bYFBD/image.jpg');
+			background-size: cover;
+			background-position: center center;
+			font-family: 'Roboto', sans-serif;
+			color: rgb(210,210,210);
+			text-align: center;
+		}
+
+		/*.hero-header .hero-item{
+			text-align: left;
+			display: inline-block;			
+			vertical-align: middle;						
+		}*/
+
+		.hero-header h6{
+			font-size: 16px;
+			letter-spacing: 2px;
+		}
+		.hero-header h2{
+			font-size: 40px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+/*		.hero-header a{
+			font-size: 14px;
+			text-decoration: none;
+			color: white;
+			display: inline-block;
+			background-color: rgb(1, 161, 221);
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			letter-spacing: 1.6px;
+		}*/
+
+
+
+		/*푸터*/
+		.footer{
+			background-color: #3E3E3E;
+			height: 100px;
+			text-align: center;
+		}
+		.link-container{
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+		.link-container a{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+
+
+
+		/*데스크탑*/
+		/*@media (min-width: 992px){*/
+			/*.navbar{
+				position: fixed;
+				width: 100%;
+			}*/
+			/*.navbar .menu{
+
+				visibility: visible;
+				float: right;
+				list-style: none;
+				line-height: 60px;
+			}*/
+
+			/*.navbar .menu .menu-item{
+				float: left;
+				margin-left: 30px;
+			}*/
+
+			/*.navbar .menu .menu-item:hover{
+				color: rgb(1, 161, 221);
+			}*/
+
+			/*.hero-header{
+				height: 900px;
+				width: 100%;
+			}*/
+/*		}*/
+
+
+		.about-page{
+			/*background-color: red;*/
+			width: 1200px;
+			height: 800px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.about-text{
+			/*background-color: white;*/
+			width: 600px;
+			height: 600px;
+			display: inline-block;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			float: left;
+			padding-right: 35px;
+		}
+
+		.about-photo{
+			/*background-color: green;*/
+			width: 600px;
+			height: 600px;
+			display: inline-block;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			float: left;
+			background-image: url(https://i.postimg.cc/Z5TjCBGm/WE-COLOR-FOOTBALL.jpg);
+			background-position: center center;
+			background-size: cover;
+		}
+
+		h4{
+			color: rgb(197, 172, 130);
+			font-weight: normal;
+		}
+
+		h2{
+			margin-top: 20px;
+			font-weight: normal;
+			margin-bottom: 30px;
+		}
+
+		.underline{
+			margin-bottom: 20px;
+		}
+
+		.contents-text{
+			color: rgb(170, 170, 170);
+			margin-bottom: 5px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- 내비게이션 -->
+	<div class="navbar">
+		<a class="logo" href="suho_index.html"><img src="https://i.postimg.cc/HLW4dDbY/suho-logo.png" alt=""><span>&nbsp; THE ART OF JUNG SUHO</span></a>
+
+		<ul class="menu">
+			<a href="suho_about.html"><li class="menu-item">ABOUT</li></a>
+			<a href="suho_illustration.html"><li class="menu-item">ILLUSTRATION</li></a>
+			<a href="suho_poster.html"><li class="menu-item">POSTER</li></a>
+			<a href="suho_video.html"><li class="menu-item">VIDEO</li></a>
+		</ul>
+	</div>
+
+	<div class="empty"></div>
+
+<!-- 	<div class="hero">
+		<div class="hero-header col">
+			<div class="helper"></div><div class="hero-item">
+				<h2>JUNG SUHO</h2>
+				<br>
+				<h6>ILLUSTRATION / POSTER / ANIMATION</h6>
+				<a href="#" target="_blank">SHOP SPRING</a>
+			</div>		
+		</div>
+	</div> -->
+
+	<div class="about-page">
+		<div class="about-text">
+			<h4>Jung Suho</h4>
+			<h2>ABOUT ME</h2>
+			<p class="underline">_____</p>
+			<p class="contents-text">Name: Jung Suho</p>
+			<p class="contents-text">Location: Republic of Korea</p>
+			<p class="contents-text">Favorite Things: Animation, Football, Travel, Music etc.</p><br>
+			<p class="contents-text">Hi, I'm Jung Suho. I draw a picture about soccer, movie and something else. Especially, I get a lot of inspiration from watching soccer games. You can follow my account at Facebook, Instagram and Youtube. Thank you for visit my page. Have a nice day! :)</p>
+		</div>
+		<div class="about-photo"></div>
+	</div>
+
+
+	
+
+	<!-- 푸터 -->
+	<div class="footer">
+		<div class="helper"></div><div class="link-container">
+			<a href="https://www.facebook.com/jungsuhoart/" target="_blank"><img src="https://applets.imgix.net/https%3A%2F%2Fassets.ifttt.com%2Fimages%2Fchannels%2F36996033%2Ficons%2Fon_color_large.png%3Fversion%3D0?ixlib=rails-2.1.3&w=240&h=240&auto=compress&s=a2564b704df5acaa8d9da981be316963" alt="facebook" width="30"></a>
+			<a href="https://www.instagram.com/jungsuho/" target="_blank"><img src="https://applets.imgix.net/https%3A%2F%2Fassets.ifttt.com%2Fimages%2Fchannels%2F28%2Ficons%2Fon_color_large.png%3Fversion%3D0?ixlib=rails-2.1.3&w=240&h=240&auto=compress&s=edcfefd7633937ca3b3e0cf98a873f58" alt="instagram" width="30"></a>
+			<a href="https://www.youtube.com/channel/UCJHpRbjcwEB1V2gUOvqsLdA?view_as=subscriber" target="_blank"><img src="https://i.postimg.cc/FHty6kPQ/youtube.png" alt="twitter" width="30"></a>
+		</div>
+	</div>
+	
+</body>
+</html>
